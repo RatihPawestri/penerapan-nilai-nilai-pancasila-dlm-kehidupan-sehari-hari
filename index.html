@@ -12,13 +12,13 @@
     
     <style>
         :root {
-            --primary: #800000; /* Deep Merlot Red */
+            --primary: #800000;
             --primary-dark: #5a0000;
-            --accent: #b8860b; /* Heritage Gold */
+            --accent: #b8860b;
             --text-main: #1a1a1a;
             --text-body: #2d2d2d;
             --text-muted: #6b7280;
-            --bg-page: #fdfcf9; /* Warm Paper Tone */
+            --bg-page: #fdfcf9;
             --bg-card: #ffffff;
             --border: #e5e1d8;
             --shadow-premium: 0 20px 40px rgba(0,0,0,0.08);
@@ -35,7 +35,6 @@
             overflow-x: hidden;
         }
 
-        /* Reading Progress */
         #progress-bar {
             position: fixed;
             top: 0; left: 0; height: 4px;
@@ -50,7 +49,6 @@
             padding: 0 24px;
         }
 
-        /* Professional Top Bar */
         nav {
             background: #fff;
             border-bottom: 1px solid var(--border);
@@ -80,7 +78,6 @@
             letter-spacing: -0.5px;
         }
 
-        /* Enhanced Hero Header */
         header {
             padding: 120px 0 80px;
             text-align: center;
@@ -121,7 +118,6 @@
             font-weight: 700;
         }
 
-        /* Layout Sections */
         .reveal-node {
             opacity: 0;
             transform: translateY(30px);
@@ -148,10 +144,9 @@
             text-align: justify;
         }
 
-        /* YouTube Responsive Container */
         .video-container {
             position: relative;
-            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            padding-bottom: 56.25%;
             height: 0;
             overflow: hidden;
             border-radius: 16px;
@@ -187,7 +182,6 @@
 
         audio { width: 100%; max-width: 500px; }
 
-        /* Sila Section */
         .sila-card {
             margin: 120px 0;
             display: flex;
@@ -223,7 +217,6 @@
         .sila-image-box img {
             max-width: 100%; max-height: 100%;
             object-fit: contain;
-            filter: drop-shadow(0 15px 15px rgba(0,0,0,0.12));
         }
 
         .sila-info { flex: 1; }
@@ -236,31 +229,11 @@
             line-height: 1.2;
         }
 
-        .sila-meaning {
-            font-weight: 800;
-            font-size: 1.2rem;
-            color: var(--primary-dark);
-            margin-bottom: 25px;
-            display: block;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
         .implementation-box {
             background: #f5f1e8;
             padding: 35px;
             border-radius: 20px;
             border-left: 6px solid var(--primary);
-        }
-
-        .implementation-box h4 {
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: var(--text-muted);
-            margin-bottom: 20px;
-            border-bottom: 1px solid var(--border);
-            padding-bottom: 10px;
         }
 
         .example-list { list-style: none; }
@@ -273,88 +246,12 @@
             color: var(--accent); font-weight: bold;
         }
 
-        /* Conclusion Banner */
-        .closing-banner {
-            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-            color: white;
-            padding: 100px 60px;
-            border-radius: 32px;
-            text-align: center;
-            margin: 150px 0;
-            box-shadow: 0 30px 60px rgba(128, 0, 0, 0.3);
-        }
-        .closing-banner p {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.2rem;
-            font-style: italic;
-            max-width: 750px;
-            margin: 0 auto;
-            line-height: 1.4;
-        }
-
-        /* Professional Dark Footer */
         footer {
             background: #111111;
             color: #ffffff;
-            padding: 100px 0 40px;
-            margin-top: 100px;
-        }
-
-        .footer-grid {
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr;
-            gap: 60px;
-            margin-bottom: 60px;
-        }
-
-        .footer-brand h3 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            color: var(--accent);
-        }
-
-        .footer-brand p {
-            font-size: 0.95rem; color: #888;
-            max-width: 400px; line-height: 1.6;
-        }
-
-        .footer-links h4 {
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            margin-bottom: 30px;
-            color: #fff;
-            border-bottom: 1px solid #333;
-            padding-bottom: 10px;
-            display: inline-block;
-        }
-
-        .footer-links ul { list-style: none; }
-        .footer-links li { margin-bottom: 15px; }
-        .footer-links a {
-            color: #888; text-decoration: none;
-            font-size: 0.9rem; transition: color 0.3s;
-        }
-        .footer-links a:hover { color: var(--accent); }
-
-        .footer-bottom {
-            border-top: 1px solid #222;
-            padding-top: 40px;
+            padding: 60px 0;
             text-align: center;
-        }
-
-        .copyright {
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: #555;
-        }
-
-        @media (max-width: 768px) {
-            .footer-grid { grid-template-columns: 1fr; gap: 40px; }
-            h1 { font-size: 2.5rem; }
-            .sila-image-box { width: 280px; margin: 0 auto; }
+            margin-top: 100px;
         }
     </style>
 </head>
@@ -382,37 +279,26 @@
         <section class="reveal-node">
             <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 40px; text-align: center; color: var(--primary);">Menghidupkan Pancasila dalam Keseharian</h2>
             <p class="intro-lead">
-                "Pancasila bukan sekadar teks formal yang kita hafal di luar kepala, melainkan jiwa, fondasi, dan pedoman hidup nyata yang harus berdenyut dalam setiap aktivitas sehari-hari."
+                "Pancasila bukan sekadar teks formal yang kita hafal di luar kepala, melainkan jiwa, fondasi, dan pedoman hidup nyata."
             </p>
-            <p class="body-p">Menerapkan nilai-nilai Pancasila tidak harus dimulai dengan langkah besar yang rumit. Kita bisa menghidupkannya melalui tindakan kecil namun berdampak besar di sekitar kita. Mari kita simak tayangan video animasi berikut untuk melihat manifestasi nyata nilai-nilai tersebut:</p>
         </section>
 
-        <!-- Video 1: Animasi YouTube -->
+        <!-- Video 1: YouTube -->
         <div class="video-container reveal-node">
-            <iframe src="https://www.youtube.com/embed/4-ReldXd4g0" allowfullscreen></iframe>
-        </div>
-
-        <div class="reveal-node" style="text-align: center; margin: 80px 0;">
-            <p style="font-weight: 800; font-size: 1.5rem; color: var(--text-main); border-bottom: 4px solid var(--accent); display: inline-block; padding-bottom: 10px;">
-                Eksplorasi Butir-Butir Pancasila
-            </p>
+            <iframe src="https://www.youtube.com/embed/4-ReldXd4g0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
 
         <!-- Sila 1 -->
         <section class="sila-card reveal-node">
             <div class="sila-image-box">
-                <img src="./assets/bintang.png" alt="Bintang">
+                <img src="assets/bintang.png" alt="Bintang">
             </div>
             <div class="sila-info">
                 <h2>1. Ketuhanan Yang Maha Esa</h2>
-                <span class="sila-meaning">Spiritualitas & Toleransi Universal</span>
                 <div class="implementation-box">
-                    <h4>Aksi Nyata</h4>
                     <ul class="example-list">
                         <li>Berdoa sebelum dan sesudah melakukan kegiatan.</li>
-                        <li>Menghormati teman yang berbeda agama saat beribadah.</li>
-                        <li>Tidak memaksakan keyakinan kepada orang lain.</li>
-                        <li>Menghormati teman yang berbeda suku.</li>
+                        <li>Menghormati perbedaan agama di lingkungan sekitar.</li>
                     </ul>
                 </div>
             </div>
@@ -421,16 +307,13 @@
         <!-- Sila 2 -->
         <section class="sila-card reveal-node reverse">
             <div class="sila-image-box">
-                <img src="./assets/rantai.png" alt="Rantai">
+                <img src="assets/rantai.png" alt="Rantai">
             </div>
             <div class="sila-info">
                 <h2>2. Kemanusiaan yang Adil dan Beradab</h2>
-                <span class="sila-meaning">Etika Sosial & Martabat Manusia</span>
                 <div class="implementation-box">
-                    <h4>Aksi Nyata</h4>
                     <ul class="example-list">
                         <li>Menolong teman yang sedang kesulitan.</li>
-                        <li>Tidak membeda-bedakan teman dalam pergaulan.</li>
                         <li>Bersikap sopan dan santun kepada semua orang.</li>
                     </ul>
                 </div>
@@ -440,87 +323,68 @@
         <!-- Sila 3 -->
         <section class="sila-card reveal-node">
             <div class="sila-image-box">
-                <img src="./assets/pohon%20beringin.jpeg" alt="Pohon Beringin">
+                <img src="assets/pohon%20beringin.jpeg" alt="Pohon Beringin">
             </div>
             <div class="sila-info">
                 <h2>3. Persatuan Indonesia</h2>
-                <span class="sila-meaning">Solidaritas & Cinta Tanah Air</span>
                 <div class="implementation-box">
-                    <h4>Aksi Nyata</h4>
                     <ul class="example-list">
-                        <li>Berteman dengan siapa saja tanpa memandang perbedaan.</li>
-                        <li>Menggunakan bahasa Indonesia dengan baik and benar.</li>
-                        <li>Bangga dan cinta terhadap tanah air Indonesia.</li>
-                        <li>Menghargai teman yang berbeda suku, ras dan budaya.</li>
+                        <li>Menghargai keragaman suku, ras, dan budaya.</li>
+                        <li>Bangga menggunakan bahasa Indonesia dan produk lokal.</li>
                     </ul>
                 </div>
             </div>
         </section>
 
+        <!-- Audio Section -->
         <section class="reveal-node">
             <div class="audio-card">
-                <p>Simak Lagu: Suku-Suku di Indonesia</p>
+                <p>Simak Audio Kebangsaan</p>
                 <audio controls>
-                    <source src="./assets/audio/lv_0_20260425171112.mp3" type="audio/mpeg">
+                    <source src="assets/audio/lv_0_20260425171112.mp3" type="audio/mpeg">
                 </audio>
             </div>
-            <p style="text-align: center; font-style: italic; color: var(--text-muted); font-size: 1.1rem;">"Perbedaan suku bukanlah alasan untuk terpecah belah, melainkan sebuah kekayaan yang menyatukan kita."</p>
         </section>
 
         <!-- Sila 4 -->
         <section class="sila-card reveal-node reverse">
             <div class="sila-image-box">
-                <img src="./assets/banteng.png" alt="Kepala Banteng">
+                <img src="assets/banteng.png" alt="Kepala Banteng">
             </div>
             <div class="sila-info">
                 <h2>4. Kerakyatan yang Dipimpin oleh Hikmat</h2>
-                <span class="sila-meaning">Demokrasi Mufakat & Kebijaksanaan</span>
                 <div class="implementation-box">
-                    <h4>Aksi Nyata</h4>
                     <ul class="example-list">
-                        <li>Bermusyawarah saat mengambil keputusan bersama.</li>
-                        <li>Mendengarkan dan menghargai pendapat orang lain.</li>
-                        <li>Menerima keputusan yang telah disepakati bersama.</li>
+                        <li>Bermusyawarah dalam mengambil keputusan bersama.</li>
+                        <li>Menghargai pendapat orang lain saat berdiskusi.</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <!-- Video 2: Menggunakan video lokal -->
+        <!-- Video 2: File Lokal -->
         <section class="reveal-node">
-            <p class="body-p" style="text-align: center;">Agar lebih memahami pentingnya persatuan, mari kita simak film pendek tentang kegiatan gotong royong berikut:</p>
             <div class="video-container">
                 <video controls>
-                    <source src="./assets/video/film.mp4" type="video/mp4">
+                    <source src="assets/video/film.mp4" type="video/mp4">
                     Browser Anda tidak mendukung pemutaran video lokal.
                 </video>
             </div>
-            <p style="text-align: center; font-size: 1.1rem; color: var(--text-muted);">Dari film tersebut kita melihat penerapan nilai persatuan, kerja sama, dan musyawarah.</p>
         </section>
 
         <!-- Sila 5 -->
         <section class="sila-card reveal-node">
             <div class="sila-image-box">
-                <img src="./assets/padi%20dan%20kapas.jpeg" alt="Padi Kapas">
+                <img src="assets/padi%20dan%20kapas.jpeg" alt="Padi Kapas">
             </div>
             <div class="sila-info">
                 <h2>5. Keadilan Sosial bagi Seluruh Rakyat</h2>
-                <span class="sila-meaning">Kesejahteraan & Keadilan Hak</span>
                 <div class="implementation-box">
-                    <h4>Aksi Nyata</h4>
                     <ul class="example-list">
-                        <li>Berbagi dengan teman yang membutuhkan.</li>
-                        <li>Tidak mengambil hak orang lain untuk kepentingan pribadi.</li>
-                        <li>Menjaga fasilitas umum dan menggunakannya dengan baik.</li>
-                        <li>Membiasakan budaya mengantre dengan tertib.</li>
+                        <li>Berlaku adil terhadap sesama teman.</li>
+                        <li>Menghargai hak dan kewajiban orang lain.</li>
                     </ul>
                 </div>
-            </div>
-        </section>
-
-        <section class="reveal-node">
-            <div class="closing-banner">
-                <p>"Mulailah menerapkan nilai-nilai Pancasila dari hal-hal kecil setiap hari, karena kebiasaan baik yang dilakukan bersama akan membawa Indonesia menjadi bangsa yang lebih maju, bersatu, dan sejahtera." 🇮🇩</p>
             </div>
         </section>
     </article>
@@ -528,56 +392,22 @@
 
 <footer>
     <div class="container">
-        <div class="footer-grid">
-            <div class="footer-brand">
-                <h3>PANCASILA.</h3>
-                <p>Media edukasi digital yang berdedikasi untuk melestarikan dan mengamalkan nilai-nilai luhur ideologi bangsa dalam kehidupan modern masyarakat Indonesia.</p>
-            </div>
-            <div class="footer-links">
-                <h4>Navigasi Jurnal</h4>
-                <ul>
-                    <li><a href="#">Beranda Utama</a></li>
-                    <li><a href="#">Arsip Artikel</a></li>
-                    <li><a href="#">Galeri Budaya</a></li>
-                    <li><a href="#">Tentang Redaksi</a></li>
-                </ul>
-            </div>
-            <div class="footer-links">
-                <h4>Ikuti Kami</h4>
-                <ul>
-                    <li><a href="#">Instagram @Pancasila</a></li>
-                    <li><a href="#">YouTube Edukasi</a></li>
-                    <li><a href="#">Facebook Fanpage</a></li>
-                    <li><a href="#">Twitter/X</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p class="copyright">&copy; 2023 Jurnal Kebangsaan &bull; Amalkan Nilai Luhur Bangsa &bull; Seluruh Hak Cipta Dilindungi.</p>
-        </div>
+        <p>&copy; 2023 Jurnal Kebangsaan &bull; Mari Amalkan Nilai Pancasila.</p>
     </div>
 </footer>
 
 <script>
-    // Reading Progress
     window.addEventListener('scroll', () => {
         const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
         const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        const scrolled = (winScroll / height) * 100;
-        document.getElementById("progress-bar").style.width = scrolled + "%";
+        document.getElementById("progress-bar").style.width = (winScroll / height * 100) + "%";
         
-        // Intersection Observer logic simplified
-        const reveals = document.querySelectorAll('.reveal-node');
-        reveals.forEach(el => {
-            const windowHeight = window.innerHeight;
-            const elementTop = el.getBoundingClientRect().top;
-            if (elementTop < windowHeight - 100) {
+        document.querySelectorAll('.reveal-node').forEach(el => {
+            if (el.getBoundingClientRect().top < window.innerHeight - 100) {
                 el.classList.add('active');
             }
         });
     });
-    
-    // Initial check
     window.dispatchEvent(new Event('scroll'));
 </script>
 
